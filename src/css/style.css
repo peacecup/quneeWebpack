@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	font-size: 15px;
+}
+
+.wrapper{
+	height: 100%;
+	display: flex;/*flex弹性布局*/
+	flex-direction: column;/*沿主轴的排列方式主轴为水平方向，从上往下*/
+	flex-wrap: nowrap;/*如何换行*/
+	justify-content: flex-start;/*在主轴上的对齐方式，flex-start左对齐*/
+	align-items: stretch;/*在交叉轴上如何对齐，center，垂直居中,,stretch 填满*/
+}
+header{
+	 /* 设定header作为item的样式，占用空间50px；边框背景色*/
+	flex-basis: 50px; 
+	border-top: solid 1px #DDD;
+    background-color: #b57373;
+    /*设定垂直居中，利用flex布局设定沿主轴居中，沿交叉轴居中*/
+	display: flex; 
+	flex-direction: row;/* 沿主轴的排列方式主轴为水平方向，从zuo往you */
+	justify-content: flex-start;
+	align-items: center;/* 在交叉轴上如何对齐，center，垂直居中 */
+} 
+header>p{
+	padding-left: 20px;
+}
+.content{
+	/*flex:1会默认按照剩余空间来填充，*/
+	flex:1;
+	/*为内容部分设定flex布局*/
+	display: flex; 
+	flex-direction: row;/*水平方向从做往右*/
+	flex-wrap: nowrap;/*不换行*/
+	justify-content: flex-start;/*在主轴上对齐的方式，从左开始*/
+	align-items: stretch;
+
+}
+#components{
+	flex: 2;
+	border-right: 2px solid whitesmoke;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+}
+#components>img{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.graph{
+	flex: 7;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+#toolbox{
+	flex-basis: 40px;
+	border-bottom: 1px solid whitesmoke;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+#toolbox>button{
+
+}
+#canvas{
+	flex: 1;
+}
+footer{
+	text-align: center;
+	flex-basis: 30px;
+	padding: 8px;
+    border-top: solid 1px #DDD;
+    background-color: #EEE;
+}

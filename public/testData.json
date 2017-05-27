@@ -1,0 +1,91 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "name": "001",
+            "state":"disabled"
+        },
+        {
+            "id": 2,
+            "name": "R1",
+            "parent": 1,
+            "state":"well"
+        },
+        {
+            "id": 3,
+            "name": "R2",
+            "parent": 1,
+            "state":"well"
+        },
+        {
+            "id": 4,
+            "name": "R3",
+            "parent": 1,
+            "state":"disabled"
+        },
+        {
+            "id": 5,
+            "name": "R4",
+            "parent": 1,
+            "state":"well"
+        },
+        {
+            "id": 6,
+            "name": "PC1",
+            "parent": 2,
+            "state":"disabled"
+        },
+        {
+            "id": 7,
+            "name": "PC2",
+            "parent": 2,
+            "state":"disabled"
+        },
+        {
+            "id": 8,
+            "name": "PC3",
+            "parent": 2,
+            "state":"well"
+        },
+        {
+            "id": 9,
+            "name": "PC4",
+            "parent": 2,
+            "state":"disabled"
+        }
+    ],
+    "relations": [
+        {
+            "from": 1,
+            "to": 2
+        },
+        {
+            "from": 1,
+            "to": 3
+        },
+        {
+            "from": 1,
+            "to": 4
+        },
+        {
+            "from": 1,
+            "to": 5
+        },
+        {
+            "from": 2,
+            "to": 6
+        },
+        {
+            "from": 2,
+            "to": 7
+        },
+        {
+            "from": 2,
+            "to": 8
+        },
+        {
+            "from": 2,
+            "to": 9
+        }
+    ]
+}
